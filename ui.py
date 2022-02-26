@@ -36,6 +36,6 @@ def instruct():
 # 
 
 def show_result(x, op, y, res):
-    record = f'{x} {op} {y} = {res} - это ui'
+    record = f'{x} {op} {y} = {res}'
     print(record)
     return record
