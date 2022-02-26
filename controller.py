@@ -1,6 +1,7 @@
 import ui
 import converter as con
 import calc
+import logger as l
 
 def get_number():
     num = con.conversion(ui.get_value())
@@ -23,7 +24,7 @@ def button_click():
         operate = get_operation()
         number2 = get_number()
         result = calc.calculate(number1, operate, number2)
-        ui.show_result(number1, operate, number2, result)
+        l.log_it(ui.show_result(number1, operate, number2, result))
     if command == '3':
         print("here is log of last 10 operations")
     # else: button_click()
